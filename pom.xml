@@ -1,0 +1,208 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Maven model version -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Project coordinates -->
+    <groupId>RestAssuredTraining</groupId>
+    <artifactId>RestAssuredTraining</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  <!-- All Required Plugins-->
+  <build>
+    <plugins>
+        <!-- Maven Compiler Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+        
+        <!-- Maven Surefire Plugin -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.1.2</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>testng.xml</suiteXmlFile><!-- Add TestNG xml file here-->
+                </suiteXmlFiles>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+    <dependencies>
+    
+    
+
+        <!-- ================= REST ASSURED =================
+             Core library for REST API automation
+             Supports GET, POST, PUT, DELETE operations
+             Uses BDD style: given(), when(), then()
+        -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>6.0.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ================= JSON PATH =================
+             Used to extract values from JSON responses
+             Helpful for assertions and validations
+        -->
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.10.0</version>
+        </dependency>
+
+        <!-- ================= ORG.JSON =================
+             Used to create and manipulate JSON objects
+             Helpful for building request payloads manually
+        -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20251224</version>
+        </dependency>
+
+        <!-- ================= GSON =================
+             Used for Java Object ↔ JSON conversion
+             Commonly used for POJO serialization/deserialization
+        -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.13.2</version>
+        </dependency>
+
+        <!-- ================= TESTNG =================
+             Test execution framework
+             Supports DataProvider, priority, groups, listeners
+        -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.11.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ================= SCRIBE JAVA =================
+             OAuth and token-based authentication library
+             Used when APIs require secured access
+        -->
+        <dependency>
+            <groupId>com.github.scribejava</groupId>
+            <artifactId>scribejava-apis</artifactId>
+            <version>8.3.3</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- ================= JSON SCHEMA VALIDATOR (CORE) =================
+             Used to validate response JSON structure
+             Ensures API response follows schema definition
+        -->
+        <dependency>
+            <groupId>com.github.java-json-tools</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>2.2.14</version>
+        </dependency>
+
+        <!-- ================= REST ASSURED SCHEMA VALIDATOR =================
+             Integrates JSON schema validation with REST Assured
+             Used with matchesJsonSchemaInClasspath()
+        -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ================= JAVA FAKER =================
+             Generates fake test data dynamically
+             Used for username, email, phone, etc.
+        -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- ================= SLF4J SIMPLE =================
+             Logging framework
+             Avoids "No SLF4J provider found" warnings
+        -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+
+        <!-- ================= APACHE POI =================
+             Used to read/write Excel files (.xls format)
+             Required for data-driven testing
+        -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.4.1</version>
+        </dependency>
+
+        <!-- ================= APACHE POI OOXML =================
+             Used to read/write Excel files (.xlsx format)
+        -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.4.1</version>
+        </dependency>
+
+        <!-- ================= JACKSON DATABIND =================
+             Used for JSON ↔ Java object mapping
+             Also used internally by REST Assured
+        -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+
+        <!-- ================= EXTENT REPORTS =================
+             Generates rich HTML execution reports
+             Shows PASS / FAIL / SKIP with logs
+        -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.2</version>
+        </dependency>
+
+        <!-- ================= LOG4J API =================
+             Logging abstraction layer
+        -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.3.2</version>
+        </dependency>
+
+        <!-- ================= LOG4J CORE =================
+             Actual logging implementation
+             Writes logs to console or files
+        -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.3.2</version>
+        </dependency>
+
+    </dependencies>
+</project>

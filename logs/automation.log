@@ -1,0 +1,56 @@
+2025-12-30 16:35:13 [main] INFO  api.test.UserTests - Test data initialized
+2025-12-30 16:35:13 [main] INFO  api.test.UserTests - POST user test started
+2025-12-30 16:35:16 [main] INFO  api.test.UserTests - POST status code: 200
+2025-12-30 16:35:16 [main] INFO  api.test.UserTests - GET user test started
+2025-12-30 16:35:17 [main] INFO  api.test.UserTests - GET status code: 200
+2025-12-30 16:35:17 [main] INFO  api.test.UserTests - PUT user test started
+2025-12-30 16:35:19 [main] INFO  api.test.UserTests - PUT status code: 200
+2025-12-30 16:35:19 [main] INFO  api.test.UserTests - DELETE user test started
+2025-12-30 16:35:20 [main] INFO  api.test.UserTests - DELETE status code: 200
+2025-12-30 17:06:15 [main] INFO  api.test.UserTests - Test data initialized
+2025-12-30 17:06:15 [main] INFO  api.test.UserTests - POST user test started
+2025-12-30 17:06:20 [main] INFO  api.test.UserTests - POST status code: 200
+2025-12-30 17:06:20 [main] INFO  api.test.UserTests - GET user test started
+2025-12-30 17:06:22 [main] INFO  api.test.UserTests - GET status code: 200
+2025-12-30 17:06:22 [main] INFO  api.test.UserTests - PUT user test started
+2025-12-30 17:06:23 [main] INFO  api.test.UserTests - PUT status code: 200
+2025-12-30 17:06:23 [main] INFO  api.test.UserTests - DELETE user test started
+2025-12-30 17:06:25 [main] INFO  api.test.UserTests - DELETE status code: 200
+2025-12-30 18:01:02 [main] INFO  api.test.UserTests2 - Test data initialized
+2025-12-30 18:01:02 [main] INFO  api.test.UserTests2 - POST user test started
+2025-12-30 18:02:37 [main] INFO  api.test.UserTests2 - Test data initialized
+2025-12-30 18:02:37 [main] INFO  api.test.UserTests2 - POST user test started
+2025-12-30 18:02:40 [main] INFO  api.test.UserTests2 - POST status code: 200
+2025-12-30 18:02:40 [main] INFO  api.test.UserTests2 - GET user test started
+2025-12-30 18:02:41 [main] INFO  api.test.UserTests2 - GET status code: 200
+2025-12-30 18:02:41 [main] INFO  api.test.UserTests2 - PUT user test started
+2025-12-30 18:02:42 [main] INFO  api.test.UserTests2 - PUT status code: 200
+2025-12-30 18:02:42 [main] INFO  api.test.UserTests2 - DELETE user test started
+2025-12-30 18:02:43 [main] INFO  api.test.UserTests2 - DELETE status code: 200
+2025-12-30 18:10:25 [main] INFO  api.test.UserTests - Test data initialized
+2025-12-30 18:10:25 [main] INFO  api.test.UserTests - POST user test started
+2025-12-30 18:10:28 [main] INFO  api.test.UserTests - POST status code: 200
+2025-12-30 18:10:28 [main] INFO  api.test.UserTests - GET user test started
+2025-12-30 18:10:29 [main] INFO  api.test.UserTests - GET status code: 200
+2025-12-30 18:10:29 [main] INFO  api.test.UserTests - PUT user test started
+2025-12-30 18:10:31 [main] INFO  api.test.UserTests - PUT status code: 200
+2025-12-30 18:10:31 [main] INFO  api.test.UserTests - DELETE user test started
+2025-12-30 18:10:32 [main] INFO  api.test.UserTests - DELETE status code: 200
+2025-12-30 18:24:46 [main] INFO  api.test.UserTests - Test data initialized
+2025-12-30 18:24:46 [main] INFO  api.test.UserTests - POST user test started
+2025-12-30 18:24:50 [main] INFO  api.test.UserTests - POST status code: 200
+2025-12-30 18:24:50 [main] INFO  api.test.UserTests - GET user test started
+2025-12-30 18:24:51 [main] INFO  api.test.UserTests - GET status code: 200
+2025-12-30 18:24:51 [main] INFO  api.test.UserTests - PUT user test started
+2025-12-30 18:24:52 [main] INFO  api.test.UserTests - PUT status code: 200
+2025-12-30 18:24:52 [main] INFO  api.test.UserTests - DELETE user test started
+2025-12-30 18:24:54 [main] INFO  api.test.UserTests - DELETE status code: 200
+2025-12-30 18:35:20 [main] INFO  api.test.UserTests - Test data initialized
+2025-12-30 18:35:20 [main] INFO  api.test.UserTests - POST user test started
+2025-12-30 18:35:23 [main] INFO  api.test.UserTests - POST status code: 200
+2025-12-30 18:35:23 [main] INFO  api.test.UserTests - GET user test started
+2025-12-30 18:35:25 [main] INFO  api.test.UserTests - GET status code: 200
+2025-12-30 18:35:25 [main] INFO  api.test.UserTests - PUT user test started
+2025-12-30 18:35:26 [main] INFO  api.test.UserTests - PUT status code: 200
+2025-12-30 18:35:26 [main] INFO  api.test.UserTests - DELETE user test started
+2025-12-30 18:35:27 [main] INFO  api.test.UserTests - DELETE status code: 200

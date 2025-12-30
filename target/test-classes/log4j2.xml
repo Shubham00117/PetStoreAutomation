@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <!-- ================= PROPERTIES ================= -->
+    <Properties>
+        <!-- Log directory path (macOS) -->
+        <Property name="LOG_PATH">
+            /Users/shubham_infinity/Desktop/test1/PetStoreAutomation/logs
+        </Property>
+
+        <!-- Log file name -->
+        <Property name="LOG_FILE_NAME">automation.log</Property>
+    </Properties>
+
+    <!-- ================= APPENDERS ================= -->
+    <Appenders>
+
+        <!-- Console Appender -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout
+                pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File Appender -->
+        <File name="FileAppender"
+              fileName="${LOG_PATH}/${LOG_FILE_NAME}"
+              append="true">
+            <PatternLayout
+                pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+    </Appenders>
+
+    <!-- ================= LOGGERS ================= -->
+    <Loggers>
+
+        <!-- Root Logger -->
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+
+        <!-- REST Assured logging (optional but recommended) -->
+        <Logger name="io.restassured" level="info" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+        <!-- Your project logs -->
+        <Logger name="api" level="debug" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+    </Loggers>
+
+</Configuration>
